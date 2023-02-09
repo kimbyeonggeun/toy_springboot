@@ -63,12 +63,12 @@
                 <div>${resultData.PRIVILEGES}</div>
               </td>
               <td>
-                <form action="/commonCodeOur/edit/${resultData.COMMON_CODE_ID}" method="get">
+                <form action="" method="get">
                   <div class="btn btn-secondary">UPDATE</div>
 						    </form>
               </td>
               <td>
-                <form action="/commonCodeOur/edit/${resultData.COMMON_CODE_ID}" method="get">
+                <form action="" method="get">
                   <div class="btn btn-danger">DELETE</div>
                 </form>
               </td>

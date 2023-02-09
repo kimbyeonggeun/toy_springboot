@@ -6,4 +6,17 @@
     <select id="selectMember" parameterType="Map" resultType="Map">
         SELECT * FROM USERS
     </select>
+
+    <!-- call Member.deleteByUID -->
+    <delete id="deleteByUID" parameterType="Map">
+        DELETE FROM USERS
+        WHERE USER_ID = #{COMMON_CODE_ID}
+    </delete>
+
+    <!-- call Member.updateByUID -->
+    <update id="updateByUID" parameterType="Map">
+        UPDATE USERS
+        SET PRIVILEGES=PRIVILEGES, 
+        WHERE USER_ID = #{COMMON_CODE_ID}
+    </update>
 </mapper>

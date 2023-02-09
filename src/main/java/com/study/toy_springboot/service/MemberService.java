@@ -15,4 +15,16 @@ public class MemberService {
         Object result = memberDao.getList(sqlMapId, dataMap);
         return result;
     }
+
+    public Object delete(Object dataMap) {
+        String sqlMapId = "Member.deleteByUID";
+        Object result = memberDao.delete(sqlMapId, dataMap);
+        return result;
+    }
+
+    public Object deleteAndGetList(Object dataMap) {
+        Object result = this.delete(dataMap);
+        result = this.getList(dataMap);
+        return result;
+    }
 }
